@@ -54,8 +54,11 @@ type Pack struct {
 func (p *Pack) SaveDir(dest string) error {
 	// Create the chart directory
 	chartPath := filepath.Join(dest, ChartsDir)
-	if err := os.Mkdir(chartPath, 0755); err != nil {
-		return fmt.Errorf("Could not create %s: %s", chartPath, err)
+	_, err := os.Stat(chartPath)
+	if err != nil && os.IsNotExist(err) {
+		if err := os.MkdirAll(chartPath, 0755); err != nil {
+			return fmt.Errorf("Could not create %s: %s", chartPath, err)
+		}
 	}
 	if err := chartutil.SaveDir(p.Chart, chartPath); err != nil {
 		return err
