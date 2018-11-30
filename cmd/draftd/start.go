@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"io"
 
-	log "github.com/Sirupsen/logrus"
+	log "github.com/sirupsen/logrus"
 	docker "github.com/docker/docker/client"
 	"github.com/spf13/cobra"
 	"golang.org/x/net/context"

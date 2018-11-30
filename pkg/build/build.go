@@ -9,7 +9,7 @@ import (
 	"path/filepath"
 
 	"github.com/BurntSushi/toml"
-	"github.com/Sirupsen/logrus"
+	"github.com/sirupsen/logrus"
 
 	// docker deps
 	"github.com/docker/docker/builder/dockerignore"
