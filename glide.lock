@@ -253,7 +253,7 @@ imports:
   version: 767eb674ef14b09119b2fff3601e64558d530c47
 - name: github.com/satori/go.uuid
   version: 879c5887cd475cd7864858769793b2ceb0d44feb
-- name: github.com/Sirupsen/logrus
+- name: github.com/sirupsen/logrus
   version: ba1b36c82c5e05c4f912a88eab0dcd91a171688f
 - name: github.com/spf13/cobra
   version: f62e98d28ab7ad31d707ba837a966378465c7b57
